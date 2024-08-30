@@ -55,7 +55,6 @@ function Conversa() {
             });
 
             if (response.status === 200) {
-                // Atualize a lista de conversas com a nova mensagem
                 setConversas(prevConversas => [...prevConversas, { nick, msg: novaMensagem, timestamp: Date.now() }]);
                 setNovaMensagem('');
             } else {
